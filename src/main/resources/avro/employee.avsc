@@ -1,0 +1,18 @@
+{
+  "type": "record",
+  "name": "Employee",
+  "namespace": "com.bss.dto",
+  "fields": [
+    {"name": "employeeId", "type": "int"},
+    {"name": "firstName", "type": "string"},
+    {"name": "lastName", "type": "string"},
+    {"name": "age", "type": "int"},
+    {
+      "name": "skills",
+      "type": {
+        "type": "array",
+        "items": "string"
+      }
+    }
+  ]
+}
